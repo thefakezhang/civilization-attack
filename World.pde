@@ -8,6 +8,11 @@ class World{
     w = new Tile[r][c];
     tileWidth = tw;
     tileHeight = th;
+    for(int i = 0; i < r; i++){
+      for(int j = 0; j < c; j++){
+        w[i][j] = new Tile();
+      }
+    }
   }
   
   public void addPlayer(String id){

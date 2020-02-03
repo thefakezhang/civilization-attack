@@ -1,4 +1,4 @@
-World w = new World(100, 100, 8, 8);
+World w = new World(100, 100, 20, 40);
 
 void setup(){
   size(800, 800);
@@ -13,7 +13,7 @@ void draw(){
     for(int j = 0; j < w.w[i].length; j++){
       push();
       translate(xoff, yoff);
-      w.w[i][j].display();
+      rect(0, 0, w.tileWidth, w.tileHeight);
       pop();
       xoff += w.tileWidth;
     }
