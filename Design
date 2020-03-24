@@ -1,0 +1,77 @@
+Overview
+  The game works with each player(s) taking control of a civilization and competing against each other until only one civilization remains on the map.
+
+Civilizations
+  Each civilization starts out somewhere on the map with just a single “capital” tile. This is the heart of the civilization. 
+
+  To prevent early elimination from other civilizations that have had more time, a civilization’s capital will be invincible for a certain duration of time or until the civilization’s territory/population reaches a certain threshold. 
+
+  Once a civilization A’s capital is taken by civilization B, all of civilization A’s territory will belong to the civilization B, including Ruined Cities (see “Tiles”). 
+
+Gameplay
+	
+  Expansion
+    The main method of expansion is through a counter. On the player’s screen, there will be a box with a number counting from 0 to 99. When a player clicks on a passible tile connected to their civilization, they will “dump” x population into that tile, x being whatever the counter currently displays. Once the population is “dumped” into said tile, the counter will revert back to 0 and start counting up again. (see “Tile Population Mechanics” in “Tiles” for more information about tile population).	
+
+  Decay
+    In the event that a section of the civilization isn’t connected to the capital city, the disconnected territory will experience decay, where the population of the disconnected territory “dies off” logarithmically every certain time interval. When the population of a tile goes under 1, the tile is no longer part of the civilization.
+
+  Session time
+    Depending on the size of the map and the number of players, games could last 	anywhere from 45 min to 10 days. Though it should be noted that the latter would most likely require a dedicated player base.
+
+
+  Tiles
+    Tile Population Mechanics
+      When populating a tile, the population of that tile will be multiplied by however many adjacent tiles are also in the player’s territory.
+      For example, if a player is trying to claim tile X with 99 on their counter and 2 adjacent tiles X are in the player’s territory, then the population “dumped” into X will be 3 x 99 = 297 population instead of just the original 99.
+
+      In addition, some tiles will have a cost to population. This means that the player will have to “dump” a certain amount of population into a tile before being able to actually populate said tile once the amount is met.
+
+
+    There are 5 different kinds of tiles. Hills, Mountains, Rivers, Lakes, and Plains.
+    Plains
+        This is the standard tile of the game. This is also the tile that has the highest chance to spawn some sort of bonus on said tile. There can only be one bonus per plains tile.
+        Bonuses:
+
+          Coins
+            Coins are bonuses that allow a player to claim not a single tile, but an area of tiles. The amount of population that goes into each tile in the area is X, X being whatever number was in the player’s counter. The area of effect for each coin is different depending on what kind of coin it is. Coins spawn in clusters, meaning it’s possible to cascade these coin bonuses.
+
+            Bronze Coins
+              Area of effect: the 4 adjacent tiles surrounding the clicked tile. 
+
+            Silver Coins
+              Area of effect: a 3x3 of tiles with the clicked tile as the center.
+
+
+
+            Gold Coins
+              Area of effect: a 3x3 of tiles with the clicked tile as the center, along with 1 tile tile in each cardinal direction (Up, Down, Left, Right) of the center tile.
+	
+				
+            Ruined Cities
+              Ruined Cities are hidden, as in they are not visible to the player until they populate the tile. Once the player throws a satisfactory amount of population at the Ruined City to “explore” it, the Ruined City will give the civilization some sort of bonus as long as the City is part of the civilization’s territory.
+              When this tile is conquered by another civilization, they acquire the tile in whatever condition the Ruined City was in before (this means if the Ruined City isn’t fully “explored, ” they have to finish “exploring” before receiving the bonus) 
+
+    Hills
+      Hills are harder than plains to populate. This means that the civilization has to throw a certain amount of population at the tile to “level” the hill, turning it into a plains tile (all of the population used for this will be lost). 
+      Emeralds
+        Each mountain has a certain chance to produce emeralds, which is the currency for the shop (see “Shop”). The only way to know if a hill tile has diamonds is to throw at least 1 population into the tile; if the hill tile has emeralds, then the tile image will change from a hill to an emerald. In that case, instead of throwing population at the tile to “level” the hill, the player will throw population at the tile to “mine” the emeralds. After throwing the required amount of population (usually higher than normal hill tiles), the player will acquire the amount of emeralds in the tile and that tile will become a plains tile in the player’s territory.
+
+    Mountains
+      Mountain tiles are impassable tiles. They serve as a wall and adds defensive elements to the game.
+
+    Lakes
+      Lake tiles, like Mountain tiles, are also impassable. However, it is possible to “drain” the tile by using a drain from the shop (see “shop”), turning connected lake and river tiles into plains tiles once the lake is completely drained.
+      Lake tiles are the source of river tiles.
+
+    Rivers
+      River tiles are possible barriers, flowing from Lake tiles. The player can “build” a bridge across a river tile by throwing a certain amount of population at the river tile. Because the “flow” of a river is generally not constant, the required amount of population to build a bridge across a river is different depending on which specific river tile the player chooses to use. 
+
+
+
+
+
+Shop(?)
+
+Drain
+Thunder
